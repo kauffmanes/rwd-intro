@@ -6,7 +6,7 @@ Clone branch part0 for the initial set up.
 
 ## Mocking Up a Tagline
 1. Pretend you have this mockup from a designer
-![tagline mockup](./part1/tagline.png)
+![tagline mockup](./images/tagline.png)
 1. Mock it up in the browser.
 ```html
 <h1>Get your own flying car today! <a href="">Read More &raquo;</a></h1>
@@ -50,3 +50,17 @@ h1 {
 
 ## Okay...where's the grid though
 We've gotten this far and still haven't touched on the subject of grids, which is supposed to be what this section is about. BUT doing this with something simple like fonts will allow us to understand it and apply it to layouts and grids.
+
+Let's pretend the graphic designer at your company has sent you a mockup that you are tasked with coding. For time's sake, we'll pretend that the basic colors, typography, and other details not related to layout are already completed.
+
+The mockup:
+![the mockup of the new blog page](./images/blogpost.png)
+
+```html
+
+```
+
+```css
+
+```
+

@@ -1,19 +1,57 @@
 /* new styles go here */
+:root {
+    --PrimaryColor: #343236;
+    --PrimaryWhite: #e4e1e9;
+}
+
 body {
-    background: #DCDBD9;
+    background: url('./images/bg.jpg') repeat repeat;
+    background-size: cover;
     color: #2d2d2d;
-    font: normal 100% Cambria, Georgia, serif;
+    font: normal 100% 'Segoe UI', Optima, sans-serif; /* 100% means 16px (usually) */
+}
+
+main {
+    padding: 24px 0;
+}
+
+aside {
+    padding: 24px 0;
+}
+
+.blog-preview {
+    border-top: solid 1px var(--PrimaryColor);
+    padding: 12px 0;
+}
+
+.page {
+    background: white;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
+}
+
+header {
+    background: var(--PrimaryColor);
 }
 
 h1 {
-    font-size: 1.5em;
-    font-style: italic;
+    font-size: 1.5em; /* 26 / 16 */
+    font-weight: bold;
+    padding: 24px 0;
+    color: var(--PrimaryWhite);
+    text-transform: uppercase;
 }
 
-h1 a {
-    color: #747477;
-    font: bold 0.4583333333em Calibri, Optima, Arial, sans-serif; /* 11 / 24 */
-    letter-spacing: 0.15em;
+h2, h3 {
+    font-weight: bold;
     text-transform: uppercase;
-    text-decoration: none;
+    color: var(--PrimaryColor);
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+.lede {
+    font-style: italic;
 }
