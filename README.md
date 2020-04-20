@@ -73,7 +73,7 @@ Show the PhotoShop version with the grids.
 
 .page {
     margin: 36px auto;
-    /* width: 960px; */
+    width: 960px;
 }
 
 .blog {
@@ -106,4 +106,50 @@ aside {
 
 1. Resize screen and demo.
 1. Now, let's get them into pixels!!!
-1. 
+1. Now we want to rid the blog of that 900px value and set it to something proportional to the page. We can use our target/context formula.
+1. We know our target: it's 900px. We want to change that something in relative terms - a % of it's containing element, which is the page. The container's target is 960px.
+1. 900px / 960px = .9375 - change this into a %
+
+```css
+.page {
+    width: 80%;
+}
+
+.blog {
+    width: 93.75%; /* 900 / 960 */
+    margin: 0 auto;
+}
+```
+1. Now - content columns. Left is 566px and right is 331px. Let's replace those with percentages.
+1. Before we use our formula, remember that our context has changed. The width of the container is
+900px, not 960 anymore.
+1. For the main, it's 566 / 900 = .628888889.
+1. For the aside, it's 331 / 900 = .367777778
+
+```css
+main {
+    width: 62.8888889%;
+}
+
+aside {
+    width: 36.7777778%;
+}
+```
+
+1. Just like that, we have a flexible, grid-based layout!
+1. Now, let's do some detail work.
+1. We have some hard-coded margins and paddings on some of our elements. Let's get rid of those.
+1. Show mockup. Say we've been treating the space like 24px. Let's change these to match our proportions using our handy formula.
+
+target / context = result
+24px / 900px = 0.026666666
+
+```css
+main, aside, header {
+    padding: 1em 2.6666666%; /* 24px / 900px */
+}
+
+.page {
+    margin: 1em auto;
+}
+```
