@@ -11,13 +11,18 @@ body {
     font: normal 100% 'Segoe UI', Optima, sans-serif; /* 100% means 16px (usually) */
 }
 
-main {
-    padding: 24px 0;
+.page {
+
 }
 
-aside {
-    padding: 24px 0;
+.blog {
+    background: white;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
 }
+
+main {}
+
+aside {}
 
 .blog-post {
     border-bottom: solid 3px var(--PrimaryColor);
@@ -27,11 +32,6 @@ aside {
 .blog-preview {
     border-top: solid 1px var(--PrimaryColor);
     padding: 12px 0;
-}
-
-.page {
-    background: white;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
 }
 
 header {
