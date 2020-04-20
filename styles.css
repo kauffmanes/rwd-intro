@@ -19,6 +19,11 @@ aside {
     padding: 24px 0;
 }
 
+.blog-post {
+    border-bottom: solid 3px var(--PrimaryColor);
+    padding-bottom: 12px;
+}
+
 .blog-preview {
     border-top: solid 1px var(--PrimaryColor);
     padding: 12px 0;
@@ -55,3 +60,5 @@ p {
 .lede {
     font-style: italic;
 }
+
+/** layout CSS here */
