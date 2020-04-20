@@ -49,7 +49,8 @@ h1 {
 1. Why is this cool? Change font-size on body from 100% to 150%...everything scales!
 
 ## Okay...where's the grid though
-Check out branch `step2-completed-basic-styling`
+- Check out branch `step2-completed-basic-styling`.
+- Read step3 readme on github.
 
 We've gotten this far and still haven't touched on the subject of grids, which is supposed to be what this section is about. BUT doing this with something simple like fonts will allow us to understand it and apply it to layouts and grids.
 
@@ -58,3 +59,51 @@ Let's pretend the graphic designer at your company has sent you a mockup that yo
 The mockup:
 ![the mockup of the new blog page](./images/blogpost.png)
 
+Show the PhotoShop version with the grids.
+
+1. Now, we need to get this information into some proper columns.
+1. We can get some information about the layout from looking at the mockup with a grid enabled.
+1. The grid is 12 columns across. Each column is 69pixels across, separated by 12px gutters. This adds up to 960px. 
+1. The blog itself is 900px, and centered horizontally in the grid.
+1. The left-hand column is 566px wide, and the aside here is 331 pixels across.
+1. So, let's get those set up!
+
+```css
+* { box-sizing: border-box; }
+
+.page {
+    margin: 36px auto;
+    /* width: 960px; */
+}
+
+.blog {
+    overflow: auto;
+    background: white;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
+    margin: 0 auto 24px;
+    width: 900px;
+}
+
+header {
+    background: var(--PrimaryColor);
+    padding: 24px;
+}
+
+main {
+    padding: 24px 0;
+    float: left;
+    width: 566px;
+    padding: 24px;
+}
+
+aside {
+    padding: 24px 0;
+    float: right;
+    width: 331px;
+}
+
+```
+
+1. Resize screen and demo.
+1. Now, let's get them into pixels!!!
+1. 

@@ -4,6 +4,8 @@
     --PrimaryWhite: #e4e1e9;
 }
 
+* { box-sizing: border-box; }
+
 body {
     background: url('./images/bg.jpg') repeat repeat;
     background-size: cover;
@@ -11,12 +13,35 @@ body {
     font: normal 100% 'Segoe UI', Optima, sans-serif; /* 100% means 16px (usually) */
 }
 
+.page {
+    margin: 36px auto;
+    width: 960px;
+}
+
+.blog {
+    overflow: auto;
+    background: white;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
+    margin: 0 auto 24px;
+    width: 900px;
+}
+
+header {
+    background: var(--PrimaryColor);
+    padding: 24px;
+}
+
 main {
     padding: 24px 0;
+    float: left;
+    width: 566px;
+    padding: 24px;
 }
 
 aside {
     padding: 24px 0;
+    float: right;
+    width: 331px;
 }
 
 .blog-post {
@@ -29,19 +54,9 @@ aside {
     padding: 12px 0;
 }
 
-.page {
-    background: white;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
-}
-
-header {
-    background: var(--PrimaryColor);
-}
-
 h1 {
     font-size: 1.5em; /* 26 / 16 */
     font-weight: bold;
-    padding: 24px 0;
     color: var(--PrimaryWhite);
     text-transform: uppercase;
 }
@@ -60,5 +75,3 @@ p {
 .lede {
     font-style: italic;
 }
-
-/** layout CSS here */
