@@ -50,7 +50,7 @@ h1 {
 
 ## Okay...where's the grid though
 - Check out branch `step2-completed-basic-styling`.
-- Read step3 readme on github.
+- Read `step4-fluid-grid-completed` readme on github.
 
 We've gotten this far and still haven't touched on the subject of grids, which is supposed to be what this section is about. BUT doing this with something simple like fonts will allow us to understand it and apply it to layouts and grids.
 
