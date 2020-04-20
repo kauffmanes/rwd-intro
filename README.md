@@ -49,18 +49,12 @@ h1 {
 1. Why is this cool? Change font-size on body from 100% to 150%...everything scales!
 
 ## Okay...where's the grid though
+Check out branch `step2-completed-basic-styling`
+
 We've gotten this far and still haven't touched on the subject of grids, which is supposed to be what this section is about. BUT doing this with something simple like fonts will allow us to understand it and apply it to layouts and grids.
 
-Let's pretend the graphic designer at your company has sent you a mockup that you are tasked with coding. For time's sake, we'll pretend that the basic colors, typography, and other details not related to layout are already completed (check out branch `step3-completed-basic-styling`).
+Let's pretend the graphic designer at your company has sent you a mockup that you are tasked with coding. For time's sake, we'll pretend that the basic colors, typography, and other details not related to layout are already completed.
 
 The mockup:
 ![the mockup of the new blog page](./images/blogpost.png)
-
-```html
-
-```
-
-```css
-
-```
 
