@@ -14,34 +14,28 @@ body {
 }
 
 .page {
-    margin: 36px auto;
     width: 960px;
+    margin: 24px auto;
 }
 
 .blog {
     overflow: auto;
     background: white;
     box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
-    margin: 0 auto 24px;
     width: 900px;
-}
-
-header {
-    background: var(--PrimaryColor);
-    padding: 24px;
+    overflow: auto;
 }
 
 main {
-    padding: 24px 0;
-    float: left;
     width: 566px;
     padding: 24px;
+    float: left;
 }
 
 aside {
+    width: 331px;
     padding: 24px 0;
     float: right;
-    width: 331px;
 }
 
 .blog-post {
@@ -52,6 +46,11 @@ aside {
 .blog-preview {
     border-top: solid 1px var(--PrimaryColor);
     padding: 12px 0;
+}
+
+header {
+    background: var(--PrimaryColor);
+    padding: 24px;
 }
 
 h1 {
