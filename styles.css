@@ -14,27 +14,32 @@ body {
 }
 
 .page {
-    width: 960px;
-    margin: 24px auto;
+    /* width: 960px; */
+    width: 80%;
+    margin: 1em auto;
+
 }
 
 .blog {
     overflow: auto;
     background: white;
     box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
-    width: 900px;
-    overflow: auto;
+    /* width: 900px; */
+    width: 93.75%;
+    margin: 0 auto;
 }
 
 main {
-    width: 566px;
-    padding: 24px;
+    /* width: 566px; */
+    width: 62.8888889%;
+    padding: 1em 2.6666666%; /* 24px / 900px */
     float: left;
 }
 
 aside {
-    width: 331px;
-    padding: 24px;
+    /* width: 331px; */
+    width: 36.7777778%;
+    padding: 1em 2.6666666%; /* 24px / 900px */
     float: right;
 }
 
@@ -50,7 +55,7 @@ aside {
 
 header {
     background: var(--PrimaryColor);
-    padding: 24px;
+    padding: 1em 2.6666666%; /* 24px / 900px */
 }
 
 h1 {
